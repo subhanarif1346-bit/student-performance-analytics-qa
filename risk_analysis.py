@@ -5,7 +5,7 @@ students = [
 
 atRiskCount = 0
 
-for student in students:
+for student in students[:100]:
     if student["gpa"] < 2.0 or student["failedModules"] >= 2:
         student["status"] = "At-Risk"
         atRiskCount += 1
